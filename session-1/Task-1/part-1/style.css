@@ -1,0 +1,37 @@
+body{
+    background-color: rgb(15, 31, 46);
+}
+
+h1{
+    color: rgb(156, 103, 33);
+}
+h3{
+    color: rgb(117, 130, 133);
+}
+
+.parent{
+    background-color: rgb(61, 89, 139);
+    display: flex;
+}
+
+.child-1{
+    width: 50%;
+}
+
+h4{
+    letter-spacing: .7px;
+}
+
+.one{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+img{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.child-2{
+    width: 50%;
+
+}
