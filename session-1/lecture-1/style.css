@@ -1,0 +1,33 @@
+.tree{
+    color: brown;
+    font-size: 40px;
+    background-color: linen;
+    width: fit-content;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+}
+
+img{
+    margin-top:30px ;
+}
+
+.name{
+    color: red;
+    font-size: 30px;
+    align-items: center;
+}
+.faculty{
+    color: blue;
+    font-size: 25px;
+    align-items: center;
+}
+.passion{
+    color: green;
+    font-size: 20px;
+    align-items: center;
+}
+span{
+    text-transform: uppercase;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
