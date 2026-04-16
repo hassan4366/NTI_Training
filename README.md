@@ -11,3 +11,11 @@
 
 <hr>
 
+
+<h2>Day-2</h2>
+<a href="session-2/lec-2">Lecture-2</a>
+<br>
+<a href="session-2/Task-2">Task-2</a>
+
+<hr>
+
