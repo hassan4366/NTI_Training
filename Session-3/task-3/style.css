@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ================= HEADER ================= */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 10;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  color: white;
+}
+
+.header ul {
+  list-style: none;
+  display: flex;
+}
+
+.header li {
+  margin-left: 20px;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+.container{
+  margin-top: 10px;
+}
+.container ul li a:hover {
+
+  text-decoration: underline rgb(209, 52, 52) 2px;
+}
+
+/* ================= HERO ================= */
+.hero {
+  height: 100vh;
+
+  background: linear-gradient(rgba(0,0,0,0.6)),
+    url("img/hero-bg.jpg") center/cover no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.hero .content {
+    margin-top: 12px;
+}
+
+.hero .content h2 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero .content p {
+  font-size: 22px;
+  padding: 12px;
+}
+
+.hero button {
+  margin-top: 20px;
+  padding: 12px 46px;
+  border: 2px solid #eeeeeed8;
+  background: transparent;
+  color: white;
+  border-radius: 62px;
+  cursor: pointer;
+}
+.hero button:hover {
+
+    background: rgb(250, 28, 72);
+    border: none;
+
+}
+
+/* ================= ABOUT ================= */

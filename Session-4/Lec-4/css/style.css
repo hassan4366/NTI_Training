@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 33.3%;
+    text-align: center;
+    padding: 10px;
+    gap: 10px;
+}
+.container img{
+    width: 300px;
+}
+.container h1{
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #020c03;
+}
+.container p{
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #ac9595;
+}
+.container button{
+    padding: 12px 20px;
+    font-size: 20px;
+    background-color: transparent;
+    color: #161010;
+    border-radius: 55px;
+    box-shadow: #fff 0px 5px 6px 2px #ac9595;
+    border: 2px solid #48f0e7;
+    cursor: pointer;
+}
+.container button:hover{
+    background-color: #48f0e7;
+    color: #fff;
+    border: 2px solid transparent;
+}
+
+
+h2{
+    text-align: center;
+    border: #ac9595 6px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #201717;
+    width: 250px;
+    position: absolute;
+    height: 79px;
+    margin: 10px 0;
+}
+
+
+h2::after{
+    content: "";
+    width: 45px;
+    height: 21px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 22px;
+    top: 90%;
+}
+
+h2::before{
+    content: "";
+    width: 6px;
+    height: 31px;
+    background-color: #17b991;
+    position: absolute;
+    z-index: 9999;
+    left: 43px;
+    top: 85%;
+}
+
+.icons{
+
+    margin-top: 93px;
+}
+
+.icons .fa-ul{
+    font-size: 20px;
+    color: #8f0404;
+}
+
+.icons-2{
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 21px 12px 13px 12px ;
+    font-size: 25px;
+    color: #1b2fdf;
+}
+
+
+.photo img{
+    width: 210px;
+    position: relative;
+    animation-name: taxi;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes taxi {
+    0%{
+        left: 0;
+        top: 0;
+        transform: rotateY(0deg);
+    }
+    50%{
+        left: 970px;
+        top: 0px;
+        transform: rotateY(0deg);
+        
+    }
+        51%{
+            left: 970px;
+        top: 0px;
+        transform: rotateY(180deg);
+        
+    }
+    100%{
+        left: 0;
+        top: 0;
+        transform: rotateY(180deg);
+    }
+
+}
