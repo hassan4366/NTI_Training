@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent{
+    border: 3px solid rgb(45, 197, 139);
+    height: 80vh;
+    display: grid;
+    grid-template-areas: 
+    "chiled1 chiled2 chiled2 chiled3"
+    "chiled1 chiled4 chiled5 chiled6"
+    "chiled1 chiled7 chiled8 chiled6";
+    
+    gap: 12px;
+}
+
+.chield1{
+    background-color: blue;
+    grid-area: chiled1;
+}
+.chield2{
+    background-color: aqua;
+    grid-area: chiled2;
+}
+.chield3{
+    background-color: bisque;
+    grid-area: chiled3;
+}
+
+.chield4{
+    background-color: rgb(88, 61, 28);
+    grid-area: chiled4;
+}
+
+.chield5{
+    background-color: rgb(88, 61, 28);
+    grid-area: chiled5;
+}
+
+.chield6{
+    background-color: rgb(18, 114, 170);
+    grid-area: chiled6;
+}
+
+.chield7{
+    background-color: rgb(130, 10, 199);
+    grid-area: chiled7;
+}
+
+
+.chield8{
+    background-color: rgb(143, 16, 216);
+    grid-area: chiled8;
+}
