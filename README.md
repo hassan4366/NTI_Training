@@ -29,4 +29,16 @@
 
 <hr>
 
+<h2>Day-4</h2>
+
+<a href="Session-4/Lec-4">Lecture-2</a>
+
+<hr>
+
+<h2>Day-5</h2>
+
+<a href="Session-5/lec-5">Lecture-2</a>
+
+<hr>
+
 
