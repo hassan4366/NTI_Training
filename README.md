@@ -41,4 +41,13 @@
 
 <hr>
 
+<h2>Day-5</h2>
+
+<a href="Session-6/lec-6">Lecture-2</a>
+
+
+<hr>
+
+
+
 
