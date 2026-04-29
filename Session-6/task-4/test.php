@@ -128,8 +128,94 @@ foreach ($films as $film) {
     }
 }
 
+// ================= issue-9 =============//
+
 echo "The film is repeated " . $count . " times";
 
+
+
+$tests = array(1,"tariq",1.5,true,7,'s',false);
+
+for($i = 0; $i < count($tests); $i++){
+    if(is_bool($tests[$i])){
+        echo $tests[$i] ? "Yes" : "No";
+    } else {
+        echo $tests[$i];
+    }
+    echo "<br>";
+}
+
+
+
+// ================ issue-10 ===================//
+
+
+$tests = array(6,4,9,3,12,8,7);
+
+sort($tests);
+
+foreach($tests as $num){
+    echo $num . " ";
+}
+
+
+
+
+// ============== issue-12 (E-commerce..problem) ============= //
+
+
+$error = "";
+$result = "";
+
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+
+    $price = $_POST['price'];
+    $quantity = $_POST['quantity'];
+
+    if(!is_numeric($price) || !is_numeric($quantity)){
+        $error = "You must enter numbers";
+    }
+    elseif($price < 0 || $quantity < 0){
+        $error = "Negative numbers  not allowed";
+    }
+    else{
+        $total = $price * $quantity;
+
+        if($total < 1000){
+            $discount = 0.10;
+        } else {
+            $discount = 0.15;
+        }
+
+        $discountValue = $total * $discount;
+        $finalPrice = $total - $discountValue;
+
+        $result = "Total before discount: $total <br>";
+        $result .= "Discount value: $discountValue <br>";
+        $result .= "Total after discount: $finalPrice";
+    }
+}
 ?>
 
-?>
+// =========== HTML Form ============= //
+
+<form method="POST">
+    <input type="number" name="price" placeholder="Product Price" min="0"><br><br>
+    <input type="number" name="quantity" placeholder="Quantity" min="0"><br><br>
+    <button type="submit">Calculate</button>
+</form>
+
+<div style="color:red;">
+    <?php echo $error; ?>
+</div>
+
+<div style="color:green;">
+    <?php echo $result; ?>
+</div>
+
+
+
+
+
+// ============= End-task ==============//
+
